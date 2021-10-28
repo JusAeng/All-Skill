@@ -10,8 +10,8 @@ class HeroPage extends StatefulWidget {
 class _HeroPageState extends State<HeroPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      backgroundColor: Colors.blue,
     );
   }
 }

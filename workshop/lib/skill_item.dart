@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:workshop/hero.dart';
+import 'package:workshop/item.dart';
 
 class SkillItem extends StatefulWidget {
   final String imageName;
@@ -18,11 +20,17 @@ class _SkillItemState extends State<SkillItem> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
               ElevatedButton(
-                onPressed: (){},
+                onPressed: (){
+                  Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(builder: (context) => HeroPage()));
+                },
                 child: Text("Heroes"),
               ),
               ElevatedButton(
-                onPressed: (){},
+                onPressed: (){
+                  Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(builder: (context) => ItemPage()));
+              },
                 child: Text("Items"),
               ),
           ],
