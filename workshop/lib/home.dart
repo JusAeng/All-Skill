@@ -13,21 +13,19 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue.shade400,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Center(
-            child: ElevatedButton(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton.icon(
                 onPressed: () {
-                  Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=> SelectGame()));
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) => SelectGame()));
                 },
-                child: Text(
-                  "Select..",
-                  style: TextStyle(fontSize: 20),
-                )
-            ),
-          )
-        ],
+                icon: Icon(Icons.play_arrow),
+                label: Text("Select"))
+          ],
+        ),
       ),
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:workshop/skill_item.dart';
 
 import 'select_image.dart';
 
@@ -28,16 +29,16 @@ class _SelectGameState extends State<SelectGame> {
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             childAspectRatio: 1/1,
-            crossAxisSpacing: 4,
-            mainAxisSpacing: 4,
+            crossAxisSpacing: 2,
+            mainAxisSpacing: 2,
           ),
           itemBuilder: (ctx,i)=>GestureDetector(
             onTap: (){
-              // Navigator.push(context,MaterialPageRoute(
-              //   builder: (context){
-              //     return EditMeme(imageName: gameName[i]);
-              //     },
-              // ));
+              Navigator.push(context,MaterialPageRoute(
+                builder: (context){
+                  return SkillItem(imageName: gameName[i]);
+                  },
+              ));
             },
             child: Image.asset(
               'assets/select_game/${gameName[i]}.jpg',
