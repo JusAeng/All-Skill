@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:workshop/hero.dart';
 import 'package:workshop/home.dart';
 import 'package:workshop/select_game.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: HeroPage(),
     );
   }
 }

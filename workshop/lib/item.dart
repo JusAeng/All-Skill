@@ -25,10 +25,10 @@ class _ItemPageState extends State<ItemPage> {
         body: GridView.builder(
           itemCount: valoItem.length,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            childAspectRatio: 1/1,
-            crossAxisSpacing: 2,
-            mainAxisSpacing: 2,
+            crossAxisCount: 1,
+            childAspectRatio: 4/1,
+            crossAxisSpacing: 10,
+            mainAxisSpacing: 50,
           ),
           itemBuilder: (ctx,i)=>GestureDetector(
             onTap: (){

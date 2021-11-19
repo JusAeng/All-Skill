@@ -13,6 +13,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue.shade400,
+      
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
